@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.admin-container {
+    max-width: 900px;
+}
+
+.invitation-header {
+    text-align: center;
+    background: linear-gradient(135deg, #0062E6, #33AEFF);
+    color: white;
+    padding: 25px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.invitation-header p {
+    margin: 0;
+}
+
+.invitation-header h2 {
+    margin: 8px 0;
+    font-size: 24px;
+}
+
+.badge-kategori {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.event-info h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.theme {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.detail-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #0062E6;
+}
+
+.detail-box p {
+    margin: 8px 0;
+}
+
+.map-container, .rundown, .rsvp-section {
+    margin-bottom: 25px;
+}
+
+.map-container h3, .rundown h3, .rsvp-section h3 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 6px;
+    color: #2c3e50;
+    font-size: 18px;
+}
+
+/* Google Maps Responsif */
+.map-responsive {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-responsive iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    display: block;
+}
+
+.rundown ul {
+    padding-left: 20px;
+}
+
+.rundown li {
+    margin-bottom: 8px;
+}
+
+.rsvp-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rsvp-section select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.btn-submit {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background: #219653;
+}
+
+/* Tabel Admin Responsif */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 550px; /* Menjaga kolom tabel tidak berhimpitan di layar HP */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #0062E6;
+    color: white;
+}
+
+.btn-wa {
+    background-color: #25D366;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.btn-wa:hover {
+    background-color: #1EBE5D;
+}
+
+/* =========================================
+   MEDIA QUERIES (TAMPILAN KHUSUS HP / TABLET)
+   ========================================= */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    .invitation-header h2 {
+        font-size: 20px;
+    }
+
+    .event-info h1 {
+        font-size: 20px;
+    }
+
+    .map-responsive iframe {
+        height: 220px;
+    }
+
+    .detail-box p, .rundown li {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
